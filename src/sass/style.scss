@@ -1,0 +1,32 @@
+@import "base/variables";
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0d0d0d;
+    text-align: center;
+    text-transform: uppercase;
+    &_left {
+        font-size: 36px;
+        color: #ffffff;
+        text-align: left;
+        line-height: 1.2;
+    }
+}
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/consultation";
+@import "blocks/forms";
+
+
+
+@import "base/media"
