@@ -9,10 +9,12 @@ gulp.task('server', function() {
 
     browserSync.init({
         server: {
-            baseDir: "src"
-        }
+            baseDir: "src",
+        },
+        browser: 'firefox',
+        notify: false
     });
-
+    gulp.watch("src/js/*.js").on('change', browserSync.reload);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 

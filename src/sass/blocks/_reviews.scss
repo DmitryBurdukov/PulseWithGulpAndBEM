@@ -1,0 +1,60 @@
+.reviews {
+    margin-bottom: 20px;
+    min-height: 955px;
+    h2.title {
+        margin: 0;
+    }
+    &__users {
+        margin-top: 20px;
+        hr {
+            max-width: 940px;
+            height: 1px;
+            background-color: #f6f6f6;
+        }
+    }
+    &-user {
+        padding: 50px 80px 50px 80px;
+        
+        display: flex;
+        &__photo {
+            min-width: 169px;
+            // max-width: 169px;
+            height: 169px;
+            border-radius: 100%;
+            &-1 {
+                // width: 100%;
+                background: url('../img/section_6/person_1/reviews_1.jpg') center center/cover no-repeat;
+            }
+            &-2 {
+                // width: 100%;
+                background: url('../img/section_6/person_2/person_2_2.jpg') center center/cover no-repeat;
+            }
+            &-3 {
+                // width: 100%;
+                background: url('../img/section_6/person_3/person_3_3.jpg') center center/cover no-repeat;
+            }
+
+        }
+        &__information {
+            padding-left: 62px;
+            &_name {
+                font-size: 18px;
+                font-weight: 700;
+                color: #0d0d0d;
+            }
+            &_marafons {
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 300;
+                color: #646464;
+            }
+            &_message {
+                margin-top: 19px;
+                font-size: 16px;
+                font-weight: 300;
+                color: #0d0d0d;
+            }
+        }
+    }
+
+}

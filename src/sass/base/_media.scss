@@ -2,7 +2,28 @@
     .container {
         padding: 0 30px;
     }
+    .catalog {
+        &__item {
+            margin: 0px 0px;
+        }
+        &__content {
+            &_active {
+                // display: flex;
+                justify-content: center;
+            }
+        }
 
+    }
+    .advantages {
+        padding: 50px 0 58px 0;
+
+        &__wrapper {
+            margin-top: 30px;
+            .advantages__icon {
+                width: 30%;
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
     .title {
@@ -52,6 +73,7 @@
         &__wrapper {
             margin-top: 30px;
             .advantages__icon {
+                width: 30%;
                 img {
                     max-height: 60px;
                     max-width: 60px;
@@ -76,6 +98,70 @@
         }
         .feed-form {
             margin-top: 25px;
+        }
+    }
+    .carousel {
+        padding: 51px;
+    }
+    .catalog {
+        padding-bottom: 73px;
+        &__tabs {
+            margin-top: 40px;
+        }
+        &__tab {
+            font-size: 15px;
+        }
+        &__content {
+            margin-top: 30px;
+        }
+    }
+    .reviews {
+        margin-bottom: 0px;
+        min-height: 790px;
+        &__users {
+            hr {
+                margin: 5px;
+            }
+        }
+        &-user {
+            padding: 20px 40px 20px 40px;
+            &__photo {
+                min-width: 120px;
+                height: 120px;
+            }
+            &__information {
+                padding-left: 32px;
+                &_marafons {
+                    margin-top: 5px;
+                }
+                &_message {
+                    margin-top: 10px;
+                    line-height: 1.1;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__content {
+            padding: 40px 48px 40px 48px;
+            width: 50%;
+        }
+        &__address {
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+        &__social {
+            &-item {
+                width: 40px;
+                height: 40px;  
+                img {
+                    height: 60%;
+                } 
+            }
         }
     }
 }
@@ -143,12 +229,12 @@
                     max-width: 30px;
                 }
                 .icon__header {
-                    margin-top: 10px;
-                    font-size: 10px;
+                    margin-top: 8px;
+                    font-size: 7px;
                 }
                 .icon__description {
                     margin-top: 10px;
-                    font-size: 9px;
+                    font-size: 6px;
                 }
             }
         }
@@ -173,5 +259,87 @@
             }
         }
     }
-
+    .carousel {
+        padding: 50px;
+        .container {
+            padding: 0;
+        }
+        &__inner {
+            // max-width: 750px;
+            div {
+                width: 100%;
+                img {
+                    width: 100%;
+                } 
+            }
+        }
+    }
+    .catalog {
+        padding-bottom: 30px;
+        &__tab {
+            // transform: skewX(-25deg);
+            height: 30px;
+            font-size: 9px;
+            div {
+                // transform: skew(125deg);
+                // height: 100%;
+                // position: absolute;
+                line-height: 30px;
+                // top: 35%;
+                // transform: translateY(40%);
+                // left: 50%;
+                // transform: translateX(-50%);
+            }
+        }
+    }
+    .reviews {
+        min-height: 670px;
+        &__users {
+            margin-top: 5px;
+        }
+        &-user {
+            padding: 20px 20px 20px 20px;
+            &__photo {
+                min-width: 90px;
+                height: 90px;
+            }
+            &__information {
+                padding-left: 15px;
+                &_name {
+                    font-size: 12px;
+                }
+                &_marafons {
+                    font-size: 9px;
+                }
+                &_message {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__content {
+            padding: 20px 28px 20px 28px;
+            width: 50%;
+            min-height: none;
+            height: 180px;
+        }
+        &__address {
+            font-size: 11px;
+            margin-bottom: 15px;
+        }
+        &__phone {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        &__social {
+            &-item {
+                width: 30px;
+                height: 30px;  
+                img {
+                    height: 60%;
+                } 
+            }
+        }
+    }
 }
